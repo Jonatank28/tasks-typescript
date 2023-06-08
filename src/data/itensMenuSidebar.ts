@@ -1,12 +1,6 @@
 import IconHome from '@/icon/IconHome'
 import IconForm from '@/icon/IconForm'
-import { ReactSVGElement } from 'react'
-
-type ItemMenuSidebar = {
-    id: number
-    title: string
-    icon: ReactSVGElement | any
-}
+import { ItemMenuSidebar } from '@/types/itensMenuSidebar'
 
 const itensMenuSidebar: ItemMenuSidebar[] = [
     {
