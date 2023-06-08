@@ -1,6 +1,5 @@
 'use client'
-import ButtonOpenSidebar from '@/components/ButtonOpenSidebar'
-import SideBar from '@/components/Sidebar'
+import LayoutStandardSidebar from '@/layout/LayoutStandardSidebar'
 import { useState } from 'react'
 
 type Props = {}
@@ -9,13 +8,18 @@ const Home = ({}: Props) => {
     const [openSidebar, setOpenSidebar] = useState<boolean>(false)
 
     return (
-        <main className="flex">
-            <SideBar open={openSidebar} onClick={() => setOpenSidebar(false)} />
-            <ButtonOpenSidebar
-                open={openSidebar}
-                onClick={() => setOpenSidebar(true)}
-            />
-        </main>
+        <LayoutStandardSidebar
+            openSidebar={openSidebar}
+            setOpenSidebar={setOpenSidebar}
+        >
+            <div className={``}>
+                <h1>Helllo World</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                    incidunt inventore placeat dolor officia impedit unde
+                </p>
+            </div>
+        </LayoutStandardSidebar>
     )
 }
 

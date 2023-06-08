@@ -11,7 +11,7 @@ const ButtonOpenSidebar = ({ open, onClick }: Props) => {
             {!open && (
                 <div
                     onClick={onClick}
-                    className="animate-buttonOpenSidebar absolute top-3 left-3 h-10 w-10 flex justify-center items-center cursor-pointer rounded-md border border-gray-200/20 p-3 hover:bg-gray-400/10"
+                    className="z-50 animate-buttonOpenSidebar absolute top-3 left-3 h-10 w-10 flex justify-center items-center cursor-pointer rounded-md border border-gray-200/20 p-3 hover:bg-gray-400/10"
                 >
                     <IconLayoutSidebar height={16} width={16} />
                 </div>
